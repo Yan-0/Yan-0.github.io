@@ -1,1 +1,128 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">    
+<title>Portfolio</title>
+</head>
+<body>
+    <header>
+       <div class="header-content">
+        <img src="https://media.licdn.com/dms/image/C4D03AQHp690wCSzlJA/profile-displayphoto-shrink_800_800/0/1610344348960?e=1715212800&v=beta&t=B0DtuQ9Z4yAIwBWobh_EGFC6muaBxNn8F0l5m7ygLEg" alt="Profile Image" class="profile-image">
+        <div class="header-text">
+            <h1>Shreyan Bhandari</h1>
+            <p>Student</p>
+        </div>
+    </div>
+	    <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+		    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <section class="about" id="about">
+                <h2>About Me</h2>
+                <p>Currently pursuing a undergrad degree in Computer Applications.</p>
+            </section>
+
+            <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project" onclick="toggleProjectDetails(1)">
+        <h3 onclick="toggleProjectDetails('project1')">Vehicle Sales and Rental System <i class="fas fa-caret-down"></i></h3>
+        <div class="dropdown-content" id="project1">
+            <div class="project-details">
+                <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="Project 1">
+                <p>Vehicle Sales and Rental System made using PHP, mySQL, HTML, CSS and JS</p>
+                <a href="https://github.com/Yan-0/Vehicle-Sales-and-Renting-System" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+    <div class="project" onclick="toggleProjectDetails(2)">
+        <h3 onclick="toggleProjectDetails('project2')">Mobile E-commerce Shop<i class="fas fa-caret-down"></i></h3>
+        <div class="dropdown-content" id="project2">
+            <div class="project-details">
+                <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="Project 2">
+                <p>Mobile E-commerce Shopping Application using Flutter.</p>
+                <a href="https://github.com/Yan-0/shopping_app" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+	<section class="certifications" id="certifications">
+    <h2>Certifications</h2>
+    <!-- Certification 1 -->
+    <div class="certification" onclick="toggleCertificationDetails(1)">
+        <h3 onclick="toggleCertificationDetails('certification1')">Foundations of Cybersecurity<i class="fas fa-caret-down"></i></h3>
+        <div class="dropdown-content" id="certification1">
+            <div class="certification-details">
+                <p>Link: <a href="https://www.coursera.org/account/accomplishments/verify/BEMQQTVLRZR5"><u>Foundations of Cybersecurity</u></a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certification 2 -->
+    <div class="certification" onclick="toggleCertificationDetails(2)">
+        <h3 onclick="toggleCertificationDetails('certification2')">Play it Safe: Manage Security Risks <i class="fas fa-caret-down"></i></h3>
+        <div class="dropdown-content" id="certification2">
+            <div class="certification-details">
+                <p>Link: <a href="https://coursera.org/verify/XE9B3E74KMLA"><u>Play it Safe: Manage Security Risks</u></a></p>
+            </div>
+        </div>
+    </div>
+
+<!-- Certification 3 -->
+    <div class="certification" onclick="toggleCertificationDetails(3)">
+        <h3 onclick="toggleCertificationDetails('certification3')">Python for Data Science, AI and Development <i class="fas fa-caret-down"></i></h3>
+        <div class="dropdown-content" id="certification3">
+            <div class="certification-details">
+                <p>Link: <a href="https://www.coursera.org/account/accomplishments/records/VAJ53QQNBXRW"><u>Python for Data Science, AI and Development</u></a></p>
+            </div>
+        </div>
+    </div>
+
+<!-- Certification 4 -->
+    <div class="certification" onclick="toggleCertificationDetails(4)">
+        <h3 onclick="toggleCertificationDetails('certification4')">React<i class="fas fa-caret-down"></i></h3>
+        <div class="dropdown-content" id="certification4">
+            <div class="certification-details">
+<p>Link: <a href="https://coursera.org/verify/Z2F2STN6QUG9"><u>React Basics</u></a></p>
+                <p>Link: <a href="https://www.coursera.org/account/accomplishments/records/T2XGXW4BYRNJ"><u>Advanced React</u></a></p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+            <section class="contact"id="contact">
+    		<h2>Contact</h2>
+    		<div class="contact-item">
+        		<i class="fas fa-envelope"></i>
+        		<p>Email: <a href="mailto:shreyanbhandari36@gmail.com">shreyanbhandari36@gmail.com</a></p>
+    		</div>
+    		<div class="contact-item">
+        		<i class="fab fa-linkedin"></i>
+        		<p>LinkedIn: <a href="https://linkedin.com/in/shreeyan">https://linkedin.com/in/shreeyan</a></p>
+    		</div>
+    		<div class="contact-item">
+        		<i class="fab fa-github"></i>
+        		<p>GitHub: <a href="https://github.com/Yan-0">github.com/Yan-0</a></p>
+    		</div>
+	   </section>
+        </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

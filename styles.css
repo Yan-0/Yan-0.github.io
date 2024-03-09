@@ -1,0 +1,262 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* ... existing styles remain unchanged ... */
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align navigation vertically in the center */
+}
+
+header h1, p {
+    margin: 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #61dafb;
+    transition: color 0.3s ease;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #61dafb;
+    transition: color 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-left: auto; /* Move navigation to the right */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #61dafb;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Ensures a circular shape */
+    margin-right: 30px; /* Adjust the spacing as needed */
+}
+
+
+.container .content {
+    flex: 2;
+    padding: 20px;
+}
+
+.project h3 {
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; /* Add this line */
+}
+
+.project h3 i {
+    margin-left: 10px; /* Add this line */
+}
+
+.about, .projects, .contact {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+
+.about:hover, .projects:hover, .contact:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #61dafb;
+}
+
+.project {
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    box-shadow: 0 4px 8px rgba(97, 218, 251, 0.4);
+}
+.project .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.project .dropdown-content.show {
+    display: block;
+}
+
+.project-details {
+    text-align: center;
+}
+
+.project-details img {
+    width: 150px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.project-details a {
+    color: #61dafb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-details a:hover {
+    color: #fff;
+}
+
+.contact {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.contact:hover {
+    transform: scale(1.02);
+}
+
+.contact h2 {
+    color: #61dafb;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #61dafb;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+
+.certifications {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.certifications:hover {
+    transform: scale(1.02);
+}
+
+.certifications h2 {
+    color: #61dafb;
+}
+
+.certification {
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.certification:hover {
+    box-shadow: 0 0 10px rgba(97, 218, 251, 0.3);
+}
+
+.certification h3 {
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.certification h3 i {
+    margin-left: 10px;
+}
+
+.certification .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.certification .dropdown-content.show {
+    display: block;
+}
+
+.certification-details p {
+    margin: 0;
+    color: #fff;
+}
