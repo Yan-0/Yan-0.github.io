@@ -260,3 +260,82 @@ h2 {
     margin: 0;
     color: #fff;
 }
+
+/* Hamburger Menu Styles */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+}
+
+.bar {
+    height: 5px;
+    width: 30px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 10px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu li:hover{
+   border-bottom: solid teal 2px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #61dafb;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
